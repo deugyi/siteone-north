@@ -1,4 +1,14 @@
-# KDS 구조검토
+# 사이트원 · 서리풀 북측
+
+회사 웹앱 등록 주소: **https://deugyi.github.io/siteone-north/**
+
+북측 시공 현황 전용 독립 배포 저장소입니다. 현재 북측 도면과 시공기록은 준비 중이며 남측 자료를 대신 표시하지 않습니다. 기존 승인 계정과 기록 서버를 사용합니다.
+
+화면 수정은 `app-template.html`과 관련 JS/CSS에서 수행한 뒤 `npm run build:sites`로 `index.html`을 갱신하고 `npm test` 후 배포합니다. 원본 통합 저장소와 남측 저장소의 변경은 자동 반영되지 않습니다. [분리 구조·로그인·운영 안내](docs/site-app-deployment.md).
+
+아래는 포함된 공통 구조 검토 코드의 기존 설명입니다. 전용 웹앱에는 북측 화면만 표시합니다.
+
+## 기반 KDS 구조검토
 
 브라우저에서 동작하는 HTML/JavaScript 구조검토 도구.
 GitHub Pages에서 사용할 수 있다. 오프라인 사용 시 `index.html`, `rc-beam.js`, `rc-beam-ui.js`, `rc-beam-checks.js`, `rc-column.js`, `rc-column-ui.js`, `rc-slab-uplift.js`, `rc-slab-uplift-ui.js`, `steel-section.js`, `steel-beam.js`, `steel-beam-ui.js`, `composite-beam.js`, `composite-beam-ui.js`를 같은 폴더에 둔다.
